@@ -1,0 +1,20 @@
+{
+  "name": "full-backend-zero",
+  "version": "1.0.0",
+  "description": "Hoi dan IT Fullstack backend zero",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sever.js"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Thao",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "full-backend-zero": "file:"
+  }
+}
