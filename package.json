@@ -1,6 +1,8 @@
+
 {
   "name": "full-backend-zero",
   "version": "1.0.0",
+  "type": "module",
   "description": "Hoi dan IT Fullstack backend zero",
   "main": "sever.js",
   "scripts": {
@@ -17,7 +19,8 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "full-backend-zero": "file:"
+    "full-backend-zero": "file:",
+    "mysql2": "^3.11.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
