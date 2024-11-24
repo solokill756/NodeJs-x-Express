@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <% results.forEach(function(item) { %>
+            <tr>
+                <td>
+                    <%= item.id %>
+                </td>
+                <td>
+                   <a href="/detail/<%= item.id %>"><%= item.name %></a> 
+                </td>
+                <td>
+                    <%= item.email %>
+                </td>
+                <td>
+                    <%= item.city %>
+                </td>
+                <td>
+                    <form action="/delete-student/<%= item.id %>" method="post">
+                            <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+</html>
+

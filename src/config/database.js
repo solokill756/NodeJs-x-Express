@@ -11,7 +11,7 @@ dotenv.config();
 
 // });
 
-const connection = await mysql.createPool({
+const connection = mysql.createPool({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
   password: process.env.DB_PASSWORD,

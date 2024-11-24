@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="/create" method="post">
+    <form method="post" action="/update-student/<%= findUser.id %>" >
         <fieldset>
-            <legend>Add new user</legend>
+            <legend>Edit new user</legend>
             <label for="name">name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" value="<%= findUser.name  %>"><br><br>
             <label for="email">gmail: </label>
-            <input type="gmail" id="email" name="email"><br><br>
+            <input type="gmail" id="email" name="email" value="<%= findUser.email  %>"><br><br>
             <label for="city">city</label>
-            <input type="text" id="city" name="city"><br><br>
+            <input type="text" id="city" name="city" value="<%= findUser.city %>"><br><br>
             <input type="submit" value="Submit">
         </fieldset>
     </form>
 </body>
+
 </html>
